@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Another Form!</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Contributor</th>
+        <th>Contribution</th>
+      </tr>
+      <tr>
+        <td>Martin</td>
+        <td>350</td>
+      </tr>
+      <tr>
+        <td>Filip</td>
+        <td>280</td>
+      </tr>
+      <tr>
+        <td>Angela</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td>Aleksandar</td>
+        <td>180</td>
+      </tr>
+      <tr>
+        <td>Maksim</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>
+          <b><i>Total Value</i></b>
+        </td>
+        <td>
+          <b><i>1110</i></b>
+        </td>
+      </tr>
+    </table>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/YD6W4FTq-Iw?start=88"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p>
+      Video starts at 35%:
+      <progress id="file" value="32" max="100">32%</progress>
+    </p>
+    <img src="svgImage.jpg" alt="SVG saved as JPG" />
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(255, 255, 0); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 0, 0); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">
+        SVG
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+  </body>
+</html>
