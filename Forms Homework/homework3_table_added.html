@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first Form!</title>
+    <style>
+      /* table,
+      th,
+      td {
+        border: 1px solid black;
+      } */
+      h1 {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">
+          <header><h1>My first Form!</h1></header>
+        </th>
+      </tr>
+      <tr>
+        <td rowspan="8">
+          <nav>
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3schools.com/html/default.asp"
+                  target="_blank"
+                  >HTML</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/css/default.asp"
+                  target="_blank"
+                  >CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/js/default.asp"
+                  target="_blank"
+                  >JavaScript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/react/default.asp"
+                  target="_blank"
+                  >React</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </td>
+      </tr>
+      <main>
+        <form action="">
+          <tr>
+            <td>
+              <label for="fullName"><b>Full name</b></label>
+              <input type="text" id="fullName" name="fullName" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"><b>Email</b></label>
+              <input type="email" id="email" name="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pwd"><b>Password</b></label>
+              <input type="password" id="pwd" name="pwd" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <b>Age Group</b>
+                <span>
+                  <input
+                    type="radio"
+                    id="ageGroup1"
+                    name="ageGroup"
+                    value="18"
+                  />
+                  <label for="ageGroup1">Bellow 18</label>
+                  <input
+                    type="radio"
+                    id="ageGroup2"
+                    name="ageGroup"
+                    value="64"
+                  />
+                  <label for="ageGroup2">18 - 64</label>
+                  <input
+                    type="radio"
+                    id="ageGroup3"
+                    name="ageGroup"
+                    value="99"
+                  />
+                  <label for="ageGroup3">Above 64</label></span
+                >
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="city"><b>City</b></label>
+
+              <select id="city">
+                <option value="sk">Skopje</option>
+                <option value="ku">Kumanovo</option>
+                <option value="te">Tetovo</option>
+                <option value="ve">Veles</option>
+                <option value="st">Stip</option>
+                <option value="pp">Prilep</option>
+                <option value="oh">Ohrid</option>
+                <option value="bt">Bitola</option>
+                <option value="sr">Strumica</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <b>Transport</b>
+                <span>
+                  <input
+                    type="checkbox"
+                    id="transport1"
+                    name="transport"
+                    value="bus"
+                  />
+                  <label for="transport1">bus</label>
+                  <input
+                    type="checkbox"
+                    id="transport2"
+                    name="transport"
+                    value="train"
+                  />
+                  <label for="transport2">train</label>
+                  <input
+                    type="checkbox"
+                    id="transport3"
+                    name="transport"
+                    value="car"
+                  />
+                  <label for="transport3">car</label>
+                  <input
+                    type="checkbox"
+                    id="transport4"
+                    name="transport"
+                    value="bike"
+                  />
+                  <label for="transport4">bike</label>
+                  <input
+                    type="checkbox"
+                    id="transport5"
+                    name="transport"
+                    value="bicycle"
+                  />
+                  <label for="transport5">bicycle</label></span
+                >
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </form>
+      </main>
+      <tr>
+        <td colspan="2">
+          <footer>
+            Created by
+            <a
+              href="https://github.com/Robert-CodeAcademy/CodeAcademy.git"
+              target="_blank"
+              >Robert Avramovski</a
+            >
+            &copy; 2022
+          </footer>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
