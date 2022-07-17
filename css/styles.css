@@ -1,10 +1,35 @@
 /* Setting text color white to all elements */
-* { color: white;}
+* {
+  color: white;
+}
 /* Setting font style italic to <h1> element */
-h1 {font-style: italic;}
+h1 {
+  font-style: italic;
+}
 /* Setting font style oblique to every <p> element that is the first <p> element of its parent */
-p:first-of-type {font-style: oblique;}
+p:first-of-type {
+  font-style: oblique;
+}
 /* Capitalize content of all elements with class="capital" */
-.capital {text-transform: capitalize;}
+.capital {
+  text-transform: capitalize;
+}
 /* Inserts "Professional " before the content of element with id = "prof" */
-#prof::before {content: "Professional "}
+#prof::before {
+  content: "Professional ";
+}
+
+/* Additional text manipulation section! */
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}
+.lnThrough {
+  text-decoration: line-through;
+}
+#bckColor {
+  color: red;
+  background-color: yellow;
+}
