@@ -1,0 +1,19 @@
+img {
+  width: 50%;
+}
+p {
+  width: 80%;
+  text-align: justify;
+}
+li {
+  list-style-image: url("tesla.jpg");
+  background-color: white;
+  border: solid 1px;
+  border-radius: 10px;
+  list-style-position: inside;
+}
+span {
+  top: -3.7em;
+  left: 4em;
+  position: relative;
+}
