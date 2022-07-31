@@ -30,7 +30,7 @@ lastName = {
   chr10: "i",
 };
 
-// Usage of length property, trim and substr method, excluded!
+// Usage of length property, trim and substr method, loops, excluded!
 
 Number(firstName.chr1) != 0 ? ((fullName += firstName.chr1), ++sumChr) : {};
 Number(firstName.chr2) != 0 ? ((fullName += firstName.chr2), ++sumChr) : {};
