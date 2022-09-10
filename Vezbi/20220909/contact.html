@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav>
+      <button onclick="changeHref('index')">Home</button
+      ><button onclick="changeHref('about')">About</button
+      ><button id="redText" onclick="changeHref('contact')">Contact</button>
+    </nav>
+    <main>
+      <form id="myForm" action="">
+        Ime: <input type="text" name="fname" /><br /><br />
+        Prezime: <input type="text" name="lname" /><br /><br />
+        Email: <input type="text" name="email" /><br /><br />
+        Masko<input type="radio" name="gender" value="masko" /> Zensko<input
+          type="radio"
+          name="gender"
+          value="zensko"
+        /><br /><br />
+        Tel: <input type="text" name="telNum" /><br /><br />
+        Adresa: <input type="text" name="addr" /><br /><br />
+        <input
+          type="button"
+          onclick="checkForm(fname.value, lname.value, email.value, gender.value, telNum.value, addr.value)"
+          value="Submit"
+        />
+      </form>
+    </main>
+  </body>
+  <script type="text/javascript" src="jsFile.js"></script>
+</html>
