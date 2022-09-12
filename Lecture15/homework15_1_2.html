@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework15_1_2</title>
+  </head>
+  <body>
+    <form action="">
+      Name:
+      <input
+        id="iName"
+        type="text"
+        name="fname"
+        onblur="onBlurInput('Name')"
+        oninput="onBlurInput('Name')"
+      /><br />
+      <div id="divName">This field should contain NaN chars!</div>
+      <br />
+      Last name:
+      <input
+        id="iLname"
+        type="text"
+        name="lname"
+        onblur="onBlurInput('Lname')"
+        oninput="onBlurInput('Lname')"
+      /><br />
+      <div id="divLname">This field should contain NaN chars!</div>
+      <br />
+      Email:
+      <input
+        id="iEmail"
+        type="text"
+        name="email"
+        onblur="onBlurInput('Email')"
+        oninput="onBlurInput('Email')"
+      /><br />
+      <div id="divEmail">This field should contain '@' char!</div>
+      <br />
+      Tel:
+      <input
+        id="iTel"
+        type="text"
+        name="telNum"
+        onblur="onBlurInput('Tel')"
+        oninput="onBlurInput('Tel')"
+      /><br />
+      <div id="divTel">This field should contain not less then 9 numbers!</div>
+      <br />
+      Address:
+      <input
+        id="iAddress"
+        type="text"
+        name="addr"
+        onblur="onBlurInput('Address')"
+        oninput="onBlurInput('Address')"
+      /><br />
+      <div id="divAddress">This field should contain NaN chars!</div>
+      <br />
+      <input
+        type="button"
+        onclick="checkForm(fname.value, lname.value, email.value, telNum.value, addr.value)"
+        value="Submit"
+      />
+    </form>
+  </body>
+  <script type="text/javascript" src="jsFile15_1_2.js"></script>
+</html>
