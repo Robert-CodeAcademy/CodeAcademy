@@ -1,4 +1,7 @@
+const url = new URL("https://www.youtube.com/watch?v=_7rT-ixivWU");
+
 alert(
-  'hash: ""\nhost: "www.youtube.com"\nhostname: "www.youtube.com"\nhref: "https://www.youtube.com/watch?v=_7rT-ixivWU"\norigin: "https://www.youtube.com"\npathname: "/watch"\nport: ""\nprotocol: "https:"\nsearch: "?v=_7rT-ixivWU"'
+  `hash: ${url.hash}\nhost: ${url.host}\nhostname: ${url.hostname}\nhref: ${url.href}\norigin: ${url.origin}\npathname: ${url.pathname}\nport: ${url.port}\nprotocol: ${url.protocol}\nsearch: ${url.search}`
 );
+
 location.href = "https://www.youtube.com/watch?v=_7rT-ixivWU";
