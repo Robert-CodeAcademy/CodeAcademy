@@ -207,16 +207,14 @@
         mainDiv.appendChild(total);
 
         var h3 = document.createElement("h3");
+        var sum = 0;
         if (sessionStorage.jsonObject) {
           var jsonObject = JSON.parse(sessionStorage.jsonObject);
-          var sum = 0;
           for (var i = 0; i < jsonObject.length; i++) {
             sum += jsonObject[i].price * jsonObject[i].qty;
           }
-          h3.innerHTML = "Total: " + sum + "$";
-        } else {
-          h3.innerHTML = "Total: 0$";
         }
+        h3.innerHTML = "Total: " + sum + "$";
         total.appendChild(h3);
 
         var btnBuyAll = document.createElement("button");
@@ -243,8 +241,8 @@
 
               var p = document.createElement("p");
               p.innerHTML = "ⓧ";
-              p.style.fontWeight = "bold";
               p.style.float = "right";
+              p.style.fontWeight = "bold";
               popup.appendChild(p);
 
               var h2 = document.createElement("h2");
@@ -278,12 +276,12 @@
               input.placeholder = "Phone Number...";
               form.appendChild(input);
 
-              var input = document.createElement("input");
-              input.type = "submit";
-              input.style.borderRadius = "5px";
-              input.value = "Confirm...";
-              input.style.margin = "10px";
-              form.appendChild(input);
+              var submit = document.createElement("input");
+              submit.type = "submit";
+              submit.value = "Confirm...";
+              submit.style.margin = "10px";
+              submit.style.borderRadius = "5px";
+              form.appendChild(submit);
 
               form.addEventListener("submit", function (e) {
                 e.preventDefault();
@@ -292,14 +290,13 @@
                   jsonObject[i].qty = 0;
                 }
                 sessionStorage.jsonObject = JSON.stringify(jsonObject);
+                alert("Thank You for Your purchase!");
                 window.location.href = "cart.html";
               });
 
               document.body.addEventListener("click", function (e) {
                 if (e.target.innerHTML == "ⓧ") {
-                  document.body.removeChild(
-                    document.getElementsByClassName("popup")[0]
-                  );
+                  document.body.removeChild(popup);
                 }
               });
             }
